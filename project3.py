@@ -1,6 +1,9 @@
 f = open("http_access_log","r+")
 for line in f:
-   print line 
+   print line.split(' - - ')[0]
 
-file = open("http_access_log.txt","r")
+for datetime in f:
+   print datetime.strptime(' ] ')
+
+
 
